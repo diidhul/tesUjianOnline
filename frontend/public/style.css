@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&display=swap");
+:root {
+  --primary: #758dff;
+  --bg: #f0f0f3;
+  --Text-Default-Secondary: #656565;
+  --Text-Brand-Secondary: #ce8700;
+  --Text-Default-Tertiary: #989898;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora", sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+* h1 {
+  font-family: "Lora", sans-serif;
+  font-weight: 700;
+  text-align: left;
+}
+* h2 {
+  font-size: 24px;
+}
+* h3 {
+  font-size: 18px;
+  color: var(--Text-Brand-Secondary);
+}
+* h4 {
+  font-family: "Manrope", sans-serif;
+}
+* p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+* body {
+  font-family: "Lora", sans-serif;
+  background-color: var(--bg);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  margin: 0px;
+  padding: 48px, 48px;
+  height: 58px;
+  gap: 0px;
+}
+.navbar .navbar-logo {
+  height: 40px;
+  width: auto;
+  padding: 0%;
+  margin: 0;
+}
+.navbar .navbar img {
+  width: 60px; /* Sesuaikan dengan lebar yang diinginkan */
+  height: auto; /* Menjaga rasio aspek gambar */
+}
+.navbar .btn-masuk button {
+  font-family: "Manrope", sans-serif;
+  background-color: #f0f0f3;
+  color: var(--primary);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: -8px -8px 16px 0px #ffffff;
+  box-shadow: 8px 8px 16px 0px #e8e8e8;
+}
+.navbar .btn button:hover {
+  background-color: #0056b3;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10%;
+}
+.hero .hero-content {
+  width: 60%;
+  gap: 0%;
+  background-image: "..srcimages\bg-hero.png";
+}
+.hero .hero-content h1 {
+  font-size: 36px;
+  color: var(--primary);
+}
+.hero .hero-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-right: 20px;
+  color: var(--Text-Default-Secondary);
+}
+.hero .hero-content .btn-box {
+  display: flex;
+  width: 180px;
+  height: 40px;
+  margin-top: 20px;
+}
+.hero .hero-content .btn-box a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #758dff;
+  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 12px;
+  color: var(--bg);
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+}
+.hero .hero-image {
+  width: 50%;
+  text-align: center;
+  gap: 0%;
+}
+.hero .hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Paket section start */
+.paket {
+  display: grid;
+  justify-content: center; /* Mengatur elemen di tengah secara horizontal */
+  align-items: center; /* Mengatur elemen di tengah secara vertikal */
+  padding: 0%;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.paket .judul-paket {
+  display: grid;
+  align-items: center; /* Mengatur elemen di tengah secara horizontal */
+  padding: 0px 300px 24px 300px;
+}
+.paket .judul-paket h3 {
+  text-align: center;
+  padding: 0 10%;
+  font-size: 26px;
+  font-family: "Manrope", sans-serif;
+}
+.paket .judul-paket p {
+  text-align: center;
+  padding: 0 10%;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  color: var(--Text-Default-Secondary);
+}
+.paket .judul-paket hr {
+  width: 100%; /* Atur lebar garis pemisah */
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1rem 0; /* Tambahkan margin agar tidak terlalu rapat */
+}
+.paket .container-card {
+  display: inline-flex;
+  background: var(--bg);
+  padding: 0 10%;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  gap: 40px;
+}
+.paket .container-card .pricing-card {
+  background: var(--bg);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+}
+.paket .container-card .pricing-card .card-judul {
+  background: var(--bg);
+  text-align: left;
+  align-items: left;
+  justify-content: start;
+  display: inline-block;
+  transform: translateX(-48px);
+  margin-bottom: 20px;
+  padding: 0px 10px 0px 10px;
+  border-radius: 0px 12px 12px 0px;
+}
+.paket .container-card .pricing-card .card-judul h2 {
+  color: var(--Text-Brand-Secondary);
+  font-family: "manrope", sans-serif;
+  font-size: 14px;
+}
+.paket .container-card .pricing-card .card-judul h2 span {
+  color: var(--primary);
+  font-family: "manrope", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+}
+.paket .container-card .pricing-card .card-text h3 {
+  text-align: left;
+  font-size: 16px;
+  padding-left: 20px;
+  text-decoration: line-through;
+  padding-bottom: 6px;
+  font-family: "manrope", sans-serif;
+  color: var(--Text-Default-Tertiary);
+  font-weight: 700;
+}
+.paket .container-card .pricing-card .card-text h2 {
+  text-align: left;
+  font-size: 20px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-family: "manrope", sans-serif;
+  color: var(--Text-Default-Secondary);
+  font-weight: 700;
+}
+.paket .container-card .pricing-card .card-text li {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "manrope", sans-serif;
+  font-weight: 600;
+  color: var(--Text-Default-Secondary);
+  word-break: break-word;
+  white-space: normal;
+}
+.paket .container-card .btn-card {
+  text-align: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 8px;
+  border: 2px solid #ce8700; /* Border kuning */
+  padding: 4px; /* Menghapus padding */
+  margin: 5%;
+  display: flexbox; /* Menjadikan konten fleksibel untuk menghilangkan ruang kosong */
+}
+.paket .container-card .btn-card a {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--Text-Brand-Secondary);
+  padding: 12px 16px; /* Menambahkan padding ke link */
+}
+
+/* Paket section end */
+/* Mengapa menggunakan Section start*/
+.mengapa {
+  display: grid;
+  justify-content: center; /* Mengatur elemen di tengah secara horizontal */
+  align-items: center; /* Mengatur elemen di tengah secara vertikal */
+  padding: 0%;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.mengapa .judul-mengapa {
+  display: grid;
+  align-items: center; /* Mengatur elemen di tengah secara horizontal */
+  padding: 0px 300px 24px 300px;
+}
+.mengapa .judul-mengapa h3 {
+  text-align: center;
+  padding: 0 10%;
+  font-size: 26px;
+  font-family: "Manrope", sans-serif;
+}
+.mengapa .judul-mengapa p {
+  text-align: center;
+  padding: 0 10%;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+}
+.mengapa .judul-mengapa hr {
+  width: 100%; /* Atur lebar garis pemisah */
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1rem 0; /* Tambahkan margin agar tidak terlalu rapat */
+}
+.mengapa .container-mengapa {
+  display: flex;
+  background: yellow;
+  padding: 0 10%;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  gap: 40px;
+}
+.mengapa .container-mengapa .card-mengapa {
+  display: inline-flexbox;
+  background: var(--bg);
+  padding: 20px;
+  border-radius: 12px;
+  width: 350px;
+}
+.mengapa .container-mengapa .card-mengapa h3 {
+  text-align: left;
+  font-size: 16px;
+  padding: 0 4%;
+  font-family: "manrope", sans-serif;
+  font-weight: 700;
+  color: var(--primary);
+}
+.mengapa .container-mengapa .card-mengapa h3 span {
+  font-family: "manrope", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--Text-Default-Secondary);
+}
+
+/* Mengapa menggunakan Section end*/
+.innerNeumorphism {
+  box-shadow: 3px 3px 2px 0px rgba(174, 174, 192, 0.2) inset, -3px -3px 1px 0px rgba(255, 255, 255, 0.6980392157) inset;
+}
+
+.Neumorphism4 {
+  box-shadow: 1.5px 1.5px 3px 0px rgba(174, 174, 192, 0.4), -1px -1px 3px 0px #ffffff;
+}
+
+.Neumorphism3 {
+  box-shadow: -8px -8px 16px 0px #ffffff, 8px 8px 16px 0px #e8e8e8;
+}
+
+.Neumorphism2 {
+  box-shadow: 1.5px 1.5px 3px 0px rgba(174, 174, 192, 0.4), -1px -1px 3px 0px #ffffff; /* Gabungkan box-shadow dalam satu properti */
+}
+
+.Neumorphism1 {
+  box-shadow: 10px 10px 30px 0px rgba(174, 174, 192, 0.4), -10px -10px 30px 0px #ffffff;
+}
+
+.Elevation {
+  box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.2509803922);
+}/*# sourceMappingURL=style.css.map */
